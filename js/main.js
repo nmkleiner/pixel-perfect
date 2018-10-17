@@ -1,14 +1,23 @@
 'use strict'
 
+function onHamburgerClick() {
+    openScreen()
+    openCanvas()
+    showXBtn()
+}
+
+function onScreenClick() {
+    closeCanvasAndScreen()
+
+}
+
+function onXClick() {
+    closeCanvasAndScreen()
+    
+}   
 function onNavClick(elBtn) {
-    // small screen only
-    var elButtonsContainer = document.querySelector('.top-nav-buttons')
-    if (elButtonsContainer.classList.contains('open')) {
-        elButtonsContainer.classList.remove('open')
-         
-        closeScreen()
-        return;
-    }
+    // func closeCanvasAndScreen verifies open canvas first
+    closeCanvasAndScreen()
     
     // wide screen only
     var elBtns = document.querySelectorAll('.top-nav-item')
@@ -19,9 +28,7 @@ function onNavClick(elBtn) {
     // add clicked to this item
     var elA = elBtn.querySelector('a')
     elBtn.classList.add('clicked')
-    elA.classList.add('clicked')
-    
-    
+    elA.classList.add('clicked')    
 }
 
 function removeClicked(elBtn) {
@@ -33,10 +40,6 @@ function removeClicked(elBtn) {
     }
 }
 
-function onHamburgerClick() {
-    openScreen()
-    openCanvas()
-}
 
 function openScreen() {
     var elScreen = document.querySelector('.screen');
@@ -53,4 +56,26 @@ function closeScreen() {
 function openCanvas() {
     var elCanvas = document.querySelector('.top-nav-buttons');
     elCanvas.classList.add('open');
+}
+
+function closeCanvas() {
+    var elButtonsContainer = document.querySelector('.top-nav-buttons')
+    elButtonsContainer.classList.remove('open')
+}
+
+function showXBtn() {
+    var elXBTN = document.querySelector('.btn-x');
+    elXBTN.style.display = 'block'
+}
+function hideXBtn() {
+    var elXBTN = document.querySelector('.btn-x');
+    elXBTN.style.display = 'none'
+}
+
+function closeCanvasAndScreen() {
+    if (document.querySelector('.top-nav-buttons').classList.contains('open')) {
+        closeCanvas()
+        closeScreen()
+        return;
+    }
 }

@@ -342,27 +342,27 @@ letter-spacing: 0.39px;
 
 @media (max-width: 980px) {
     .top-nav-buttons {
-        padding-top: 15vh;
         position: fixed;
-        right: 0;
+        width: 80%;
+        right: 10%;
         top: 0;
         display: flex;
         flex-direction: column;
-        height: 100vh;
-        /* width: 180px; */
         background: #292929;
         border-left: 1px solid rgba(98, 98, 98, 0.7);
-        transform: translate(100%, 0);
+        transform: translateY(-110%);
         transition: transform .6s;
+        font-size: 8em;
     }
     
     .top-nav-buttons.open {
-        transform: translate(0, 0);
+        transform: translateY(5vh);
         z-index: 2;
     }
     
     .top-nav-item {
-        height: fit-content;
+        height: 22vh;
+        width: 100%;
         padding: 10px 0;
         border-bottom: 1px solid white;
     }
