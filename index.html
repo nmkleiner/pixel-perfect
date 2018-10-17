@@ -6,17 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Blogin</title>
     <link rel='stylesheet' href='css/style.css'>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
 
- 
+
 </head>
 
 <body>
     <div class="screen" onclick="onScreenClick()"></div>
+    <div class="modal flex flex-column container " onclick="onScreenClick()">
+        <span onclick="onCloseModal()">X</span>
+        <h2>modal header</h2>
+        <p>Lorel ipsum dolor sit amet, consectetur adipisicing america first.
+            Laudantium eius dolores beatae quasi incidunt asperiores
+            reiciendis, veniam alias, quis dolorem saepe nesciunt quae magni
+            similique sex iusto labore cumque?</p>
+        <input type="text" placeholder="shubi@dubi.com">
+        <div class="modal-container">
+            <div class="modal-btn-container flex center">
+                <button class="modal-btn btn-ok" onclick="onCloseModal()"> ok </button>
+                <button class="modal-btn btn-cancel" onclick="onCloseModal()">cancel</button>
+            </div>
+        </div>
+    </div>
     <header class="flex">
         <section class="top-nav container center flex">
             <div class="logo top-logo flex align-center">blogin<span>.</span></div>
-    
             <nav class="top-nav-buttons flex ">
                 <div class="top-nav-item flex" onclick="onNavClick(this)"><a class="m-auto" href="#">journal</a></div>
                 <div class="top-nav-item flex" onclick="onNavClick(this)"><a class="m-auto" href="#">about</a></div>
@@ -26,8 +41,6 @@
         </section>
         <div class="btn-collapse" onclick="onHamburgerClick()">☰</div>
         <div class="btn-x" onclick="onXClick()">X</div>
-
-
     </header>
 
     <main class="main-container container flex flex-column center">
@@ -41,10 +54,12 @@
                         ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est
                         laborum.</p>
 
-                    <p class="item-paragraph">Duis aute irure dolor in reprehenderit in voluptate velit esse <span>cillum
-                        dolore eu fugiat nulla pariatur...</span></p>
+                    <p class="item-paragraph">Lorel ipsum dolor sit amet, consectetur adipisicing america first.
+                        Laudantium eius dolores beatae quasi incidunt asperiores
+                        reiciendis, veniam alias, quis dolorem saepe nesciunt quae magni
+                        similique sex iusto labore cumque?</p>
                 </div>
-                <button class="item-btn">Continue Reading</button>
+                <button class="item-btn" onclick="onContinueClick()">Continue Reading</button>
             </div>
         </div>
         <div class="post-item flex flex-row">
@@ -57,10 +72,12 @@
                         ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est
                         laborum.</p>
 
-                    <p class="item-paragraph">Duis aute irure dolor in reprehenderit in voluptate velit esse <span>cillum
-                        dolore eu fugiat nulla pariatur...</span></p>
+                    <p class="item-paragraph">Lorel ipsum dolor sit amet, consectetur adipisicing america first.
+                        Laudantium eius dolores beatae quasi incidunt asperiores
+                        reiciendis, veniam alias, quis dolorem saepe nesciunt quae magni
+                        similique sex iusto labore cumque?</p>
                 </div>
-                <button class="item-btn">Continue Reading</button>
+                <button class="item-btn" onclick="onContinueClick()">Continue Reading</button>
             </div>
         </div>
         <div class="post-item flex flex-row">
@@ -73,10 +90,12 @@
                         ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est
                         laborum.</p>
 
-                    <p class="item-paragraph">Duis aute irure dolor in reprehenderit in voluptate velit esse <span>cillum
-                        dolore eu fugiat nulla pariatur...</span></p>
+                    <p class="item-paragraph">Lorel ipsum dolor sit amet, consectetur adipisicing america first.
+                        Laudantium eius dolores beatae quasi incidunt asperiores
+                        reiciendis, veniam alias, quis dolorem saepe nesciunt quae magni
+                        similique sex iusto labore cumque?</p>
                 </div>
-                <button class="item-btn">Continue Reading</button>
+                <button class="item-btn" onclick="onContinueClick()">Continue Reading</button>
             </div>
         </div>
     </main>
@@ -87,9 +106,10 @@
     </div>
 
     <footer class="footer flex flex-column align-center">
-            <div class="logo bot-logo">blogin<span>.</span></div>
+        <div class="logo bot-logo">blogin<span>.</span></div>
 
-        <p class="copyrights justify-center">© 2014 Blogin.com - All Rights Reserved - Find more free Templates at <span>Pixelhint.com</span></p>
+        <p class="copyrights justify-center">© 2014 Blogin.com - All Rights Reserved - Find more free Templates at
+            <span>Pixelhint.com</span></p>
         <div class="socials-container flex space-between">
             <div class="social flex align-center justify-center klavika">f</div>
             <div class="social flex align-center justify-center"><i class="fab fa-twitter"></i></div>

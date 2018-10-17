@@ -1,24 +1,28 @@
 'use strict'
 
 function onHamburgerClick() {
-    openScreen()
-    openCanvas()
+    openElement('.screen')
+    openElement('.top-nav-buttons')
+    
     showXBtn()
     hideCollapseBtn()
 }
 
 function onScreenClick() {
     closeCanvasAndScreen()
-
+    
 }
 
 function onXClick() {
-    closeCanvasAndScreen()
+    closeElement('.screen')
+    closeElement('.top-nav-buttons')
     showCollapseBtn()
     
-}   
+}
+
+
 function onNavClick(elBtn) {
-    // func closeCanvasAndScreen verifies open canvas first
+        // func closeCanvasAndScreen verifies open canvas first
     closeCanvasAndScreen()
     
     // wide screen only
@@ -33,6 +37,16 @@ function onNavClick(elBtn) {
     elA.classList.add('clicked')    
 }
 
+function onContinueClick() {
+    openElement('.modal')
+    openElement('.screen')
+}
+
+function onCloseModal() {
+    closeElement('.modal')
+    closeElement('.screen')
+}
+
 function removeClicked(elBtn) {
     var elA = elBtn.querySelector('a')
     if (elA.classList.contains('clicked')) {
@@ -42,28 +56,16 @@ function removeClicked(elBtn) {
     }
 }
 
-
-function openScreen() {
-    var elScreen = document.querySelector('.screen');
-    elScreen.classList.add('open');
-    
+function openElement(selector) {
+    var el = document.querySelector(selector)
+    el.classList.add('open');
 }
 
-function closeScreen() {
-    var elScreen = document.querySelector('.screen');
-    elScreen.classList.remove('open');
+function closeElement(selector) {
+    var el = document.querySelector(selector)
+    el.classList.remove('open');
 }
 
-
-function openCanvas() {
-    var elCanvas = document.querySelector('.top-nav-buttons');
-    elCanvas.classList.add('open');
-}
-
-function closeCanvas() {
-    var elButtonsContainer = document.querySelector('.top-nav-buttons')
-    elButtonsContainer.classList.remove('open')
-}
 
 function showCollapseBtn() {
     var elBtn = document.querySelector('.btn-collapse');
@@ -87,8 +89,9 @@ function hideXBtn() {
 
 function closeCanvasAndScreen() {
     if (document.querySelector('.top-nav-buttons').classList.contains('open')) {
-        closeCanvas()
-        closeScreen()
+        closeElement('.screen')
+        closeElement('.top-nav-buttons')
+
         showCollapseBtn()
         hideXBtn()
         return;
