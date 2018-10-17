@@ -375,12 +375,15 @@ letter-spacing: 0.39px;
         border-bottom: 1px solid #58c93a;
     }        
         
-
+    .logo {
+        font-size: 80px;
+    }
 
     .btn-collapse {
         cursor: pointer;
         display: flex;
         padding-right: 10px;
+        font-size: 80px;
 
     }
 
@@ -399,7 +402,6 @@ letter-spacing: 0.39px;
         margin: 0 auto;
         margin-bottom: 20px;
         width: 100%;
-        max-width: 460px;
     }
     .item-sub-container {
         margin: 0 auto;
@@ -408,14 +410,13 @@ letter-spacing: 0.39px;
     .item-heading {
         width: 100%;
         text-overflow: ellipsis;
-        max-width: 460px;
+        text-align: center;
         
     }
     .item-text {
         margin-bottom: 40px;
         width: 100%;
         text-overflow: ellipsis;
-        max-width: 460px;
     }
     
 

@@ -5,7 +5,7 @@ function onNavClick(elBtn) {
     var elButtonsContainer = document.querySelector('.top-nav-buttons')
     if (elButtonsContainer.classList.contains('open')) {
         elButtonsContainer.classList.remove('open')
-        
+         
         closeScreen()
         return;
     }
