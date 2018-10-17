@@ -1,0 +1,8 @@
+-mobile first
+
+-medium width
+
+-all font sizes to rem 
+->then change html's font size changes at media querys
+
+-look at pdf for more directions
