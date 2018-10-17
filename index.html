@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Blogin</title>
+    <link rel='stylesheet' href='css/style.css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <div class="screen" onclick="onNavClick()"></div>
+    <header class="flex">
+        <section class="top-nav container center flex space-between">
+            <div class="logo top-logo flex align-center">blogin<span>.</span></div>
+    
+            <nav class="top-nav-buttons flex ">
+                <div class="top-nav-item flex" onclick="onNavClick(this)"><a class="m-auto" href="#">journal</a></div>
+                <div class="top-nav-item flex" onclick="onNavClick(this)"><a class="m-auto" href="#">about</a></div>
+                <div class="top-nav-item flex" onclick="onNavClick(this)"><a class="m-auto" href="#">work</a></div>
+                <div class="top-nav-item flex" onclick="onNavClick(this)"><a class="m-auto" href="#">contact</a></div>
+            </nav>
+        </section>
+        <div class="btn-collapse flex align-center" onclick="onHamburgerClick()">☰</div>
+
+
+    </header>
+
+    <main class="main-container container flex flex-column center">
+        <div class="post-item flex flex-row">
+            <img src="./img/england-2372381_960_720.jpg" alt="" class="item-img">
+            <div class="item-sub-container flex flex-column">
+                <h2 class="item-heading">Duis aute irure dolor in
+                    henderit in voluptate.</h2>
+                <div class="item-text">
+                    <p class="item-paragraph">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est
+                        laborum.</p>
+
+                    <p class="item-paragraph">Duis aute irure dolor in reprehenderit in voluptate velit esse <span>cillum
+                        dolore eu fugiat nulla pariatur...</span></p>
+                </div>
+                <button class="item-btn">Continue Reading</button>
+            </div>
+        </div>
+        <div class="post-item flex flex-row">
+            <img src="./img/Layer_3.png" alt="" class="item-img">
+            <div class="item-sub-container flex flex-column">
+                <h2 class="item-heading">Duis aute irure dolor in
+                    henderit in voluptate.</h2>
+                <div class="item-text">
+                    <p class="item-paragraph">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est
+                        laborum.</p>
+
+                    <p class="item-paragraph">Duis aute irure dolor in reprehenderit in voluptate velit esse <span>cillum
+                        dolore eu fugiat nulla pariatur...</span></p>
+                </div>
+                <button class="item-btn">Continue Reading</button>
+            </div>
+        </div>
+        <div class="post-item flex flex-row">
+            <img src="./img/Layer_4.png" alt="" class="item-img">
+            <div class="item-sub-container flex flex-column">
+                <h2 class="item-heading">Duis aute irure dolor in
+                    henderit in voluptate.</h2>
+                <div class="item-text">
+                    <p class="item-paragraph">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est
+                        laborum.</p>
+
+                    <p class="item-paragraph">Duis aute irure dolor in reprehenderit in voluptate velit esse <span>cillum
+                        dolore eu fugiat nulla pariatur...</span></p>
+                </div>
+                <button class="item-btn">Continue Reading</button>
+            </div>
+        </div>
+    </main>
+
+    <div class="bot-nav container center flex space-between">
+        <div class="bot-nav-btn flex align-center">&nbsp;&nbsp;previous</div>
+        <div class="bot-nav-btn flex align-center">next&nbsp;&nbsp;</div>
+    </div>
+
+    <footer class="footer flex flex-column align-center">
+            <div class="logo bot-logo">blogin<span>.</span></div>
+
+        <p class="copyrights justify-center">© 2014 Blogin.com - All Rights Reserved - Find more free Templates at <span>Pixelhint.com</span></p>
+        <div class="socials-container flex space-between">
+            <div class="social flex align-center justify-center klavika">f</div>
+            <div class="social flex align-center justify-center"><i class="fab fa-twitter"></i></div>
+            <div class="social flex align-center justify-center"><i class="fab fa-behance"></i></div>
+            <div class="social flex align-center justify-center"><img src="img/D.png"></div>
+        </div>
+    </footer>
+
+    <script src='js/main.js'></script>
+</body>
+
+</html>
