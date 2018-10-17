@@ -149,6 +149,11 @@ header {
 .btn-collapse {
     display: none;
 }
+.btn-x {
+    display: none;
+    font-size: 80px;
+    padding-right: 10px;
+}
 
 /* main container */
 
@@ -229,8 +234,6 @@ header {
     display: none;
     position: absolute;
     right: 20px;
-    transition-delay: 0.2s;
-    transition: 0s;
 }
 
 .item-btn:hover { 
@@ -255,8 +258,6 @@ header {
 
 
 .bot-nav-btn {
-    margin: 0 30px;
-    width: 95px;
     height: 100%;
     color: #818181;
     font-family: Lato;
@@ -378,13 +379,14 @@ letter-spacing: 0.39px;
     .logo {
         font-size: 80px;
     }
+    
+
 
     .btn-collapse {
         cursor: pointer;
         display: flex;
         padding-right: 10px;
         font-size: 80px;
-
     }
 
     .container{
@@ -425,8 +427,9 @@ letter-spacing: 0.39px;
         width: 90%;
         margin: 0 auto;
         font-size: 2em;
-        /* padding: 0; */
     }
 
-    
+    .bot-nav-btn {
+        font-size: 3em;
+    }
 }

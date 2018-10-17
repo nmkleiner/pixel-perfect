@@ -4,6 +4,7 @@ function onHamburgerClick() {
     openScreen()
     openCanvas()
     showXBtn()
+    hideCollapseBtn()
 }
 
 function onScreenClick() {
@@ -13,6 +14,7 @@ function onScreenClick() {
 
 function onXClick() {
     closeCanvasAndScreen()
+    showCollapseBtn()
     
 }   
 function onNavClick(elBtn) {
@@ -63,10 +65,21 @@ function closeCanvas() {
     elButtonsContainer.classList.remove('open')
 }
 
+function showCollapseBtn() {
+    var elBtn = document.querySelector('.btn-collapse');
+    elBtn.style.display = 'block'
+}
+
+function hideCollapseBtn() {
+    var elBtn = document.querySelector('.btn-collapse');
+    elBtn.style.display = 'none'
+}
+
 function showXBtn() {
     var elXBTN = document.querySelector('.btn-x');
     elXBTN.style.display = 'block'
 }
+
 function hideXBtn() {
     var elXBTN = document.querySelector('.btn-x');
     elXBTN.style.display = 'none'
@@ -76,6 +89,8 @@ function closeCanvasAndScreen() {
     if (document.querySelector('.top-nav-buttons').classList.contains('open')) {
         closeCanvas()
         closeScreen()
+        showCollapseBtn()
+        hideXBtn()
         return;
     }
 }
