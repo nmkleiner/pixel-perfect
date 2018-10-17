@@ -555,6 +555,7 @@ letter-spacing: 0.39px;
     .item-img {
         width: 52%;
         margin-bottom: 0;
+        margin-top: 0;
         margin-right: 20px;
     }
     
